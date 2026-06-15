@@ -36,6 +36,13 @@ Install the following libraries using the Arduino IDE Library Manager:
 * Adafruit SSD1306
 * Adafruit GFX Library
 
+## Setup
+
+1. Connect the BME280 and OLED according to the wiring table.
+2. Install the required libraries using the Arduino IDE Library Manager.
+3. Upload the sketch to the ESP32.
+4. Power the device and verify the OLED displays sensor data.
+
 ## Features
 
 * Displays temperature in Fahrenheit
@@ -43,17 +50,6 @@ Install the following libraries using the Arduino IDE Library Manager:
 * Displays atmospheric pressure in hPa
 * Updates automatically every 2 seconds
 * Uses a shared I2C bus for both devices
-
-## Display Layout
-
-```text
-BME280 Weather
-
-83.9 F
-
-Humidity: 48.7%
-Pressure: 1010.8 hPa
-```
 
 ## How It Works
 
@@ -69,6 +65,17 @@ During each loop cycle:
 6. Updated values are drawn on the screen.
 7. The display is refreshed.
 8. The system waits 2 seconds before repeating.
+
+## Display Layout
+
+```text
+BME280 Weather
+
+83.9 F
+
+Humidity: 48.7%
+Pressure: 1010.8 hPa
+```
 
 ## I2C Addresses
 
@@ -87,11 +94,4 @@ delay(2000);
 
 To change the refresh rate, adjust the delay value in the `loop()` function.
 
-## Example Output
-
-```text
-Temperature: 83.9 F
-Humidity: 48.7%
-Pressure: 1010.8 hPa
-```
 
