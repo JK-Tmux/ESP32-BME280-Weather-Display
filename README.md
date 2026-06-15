@@ -1,7 +1,7 @@
 # ESP32 BME280 OLED Weather Display
 
 
-![Project Demo](images/oled-display.jpg)
+![Project Demo](images/20260614_183520.jpg)
 
 
 A simple weather display built with an ESP32, a BME280 environmental sensor, and a 0.96" SSD1306 OLED display.
